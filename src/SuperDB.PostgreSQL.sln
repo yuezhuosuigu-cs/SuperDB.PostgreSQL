@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperDB.PostgreSQL", "SuperDB.PostgreSQL\SuperDB.PostgreSQL.csproj", "{C042ED5A-E9BD-44C3-BB8F-C5F8211D2C99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C042ED5A-E9BD-44C3-BB8F-C5F8211D2C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C042ED5A-E9BD-44C3-BB8F-C5F8211D2C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C042ED5A-E9BD-44C3-BB8F-C5F8211D2C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C042ED5A-E9BD-44C3-BB8F-C5F8211D2C99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDD6620D-3956-4C72-8690-616507283301}
+	EndGlobalSection
+EndGlobal
