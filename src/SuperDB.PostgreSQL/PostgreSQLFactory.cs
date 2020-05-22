@@ -6,17 +6,16 @@ using System.Data;
 
 namespace SuperDB.PostgreSQL
 {
-    public class PostgreSQLFactory : IDBFactory
+    public class PostgreSQLFactory : DBFactory
     {
         private IDbConnection _Connection;
-        private IDbTransaction _Transaction;
 
         public static PostgreSQLFactory Create()
         {
             return new PostgreSQLFactory();
         }
 
-        public IDbConnection Connection
+        public override IDbConnection Connection
         {
             get
             {
@@ -30,37 +29,6 @@ namespace SuperDB.PostgreSQL
                 }
                 return _Connection;
             }
-        }
-
-        public IDbTransaction Transaction
-        {
-            get
-            {
-                if (_Transaction == default)
-                {
-                    _Transaction = Connection.BeginTransaction();
-                }
-                return _Transaction;
-            }
-        }
-
-        public bool Commit()
-        {
-            Transaction.Commit();
-            return true;
-        }
-
-        public void Dispose()
-        {
-            _Connection?.Dispose();
-            _Connection = default;
-            _Transaction = default;
-        }
-
-        public bool Rollback()
-        {
-            Transaction.Rollback();
-            return false;
         }
     }
 }
